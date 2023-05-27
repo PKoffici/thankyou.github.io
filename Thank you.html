@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        #thankYouMessage {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function sendThankYouMessage() {
+            var coachName = "Francis";
+            var assistantName = "Pamela";
+            var message = `
+                <div class="message">
+                    <h3>Dear ${coachName} and ${assistantName},</h3>
+                    <br>
+                    <p>
+                        We hope this message finds you well. We wanted to take a moment to express my sincere gratitude for your excellent training in web designing. Your guidance, knowledge, and support throughout the training program have been invaluable, and We am truly thankful for the opportunity to learn from both of you.
+                    </p>
+                    <br>
+                    <p>
+                        Your expertise and passion for web design have inspired us to explore this field further and continue developing my skills. The practical exercises, insightful explanations, and hands-on projects have significantly enhanced our understanding of web design principles and techniques.
+                    </p>
+                    <br>
+                    <p>
+                        We appreciate the patience and dedication you both have shown in answering our questions and providing valuable feedback on our works. Your commitment to ensuring that each participant receives personalized attention and support is commendable.
+                    </p>
+                    <br>
+                    <p>
+                        The training sessions were engaging, well-structured, and packed with useful information. The real-world examples and industry insights you shared have given us a broader perspective on web designing and its practical applications.
+                    </p>
+                    <br>
+                    <p>
+                        We are fortunate to have had the opportunity to learn from such talented and experienced professionals like you. Your commitment to excellence and your passion for teaching have made this learning journey truly enriching and enjoyable.
+                    </p>
+                    <br>
+                    <p>
+                        Once again, We extend my heartfelt gratitude to both of you for your outstanding training. We look forward to applying the knowledge and skills we have gained under your guidance in our future endeavors.
+                    </p>
+                    <br>
+                    <p>
+                        Thank you once again for your time, expertise, and dedication.
+                    </p>
+                    <br>
+                    <p>
+                        Best regards,<br>
+                        All Accra Asustem Participants
+                    </p>
+                </div>
+            `;
+            document.getElementById("thankYouMessage").innerHTML = message;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You Message</h> <br>   <button onclick="sendThankYouMessage()">See Message</button>
+    <div id="thankYouMessage"></div>
+</body>
+</html>
